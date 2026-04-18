@@ -3,7 +3,7 @@
     "title": "Correlated topological insulators with mixed valence",
     "norm": "correlatedtopologicalinsulatorswithmixedvalence",
     "doi": "10.1103/physrevlett.110.096401",
-    "count": 314
+    "count": 315
   },
   "weng2014topological": {
     "title": "Topological crystalline Kondo insulator in mixed valence ytterbium borides",
@@ -15,19 +15,19 @@
     "title": "Implementation of LDA+DMFT with the pseudo-potential-plane-wave method",
     "norm": "implementationofldadmftwiththepseudopotentialplanewavemethod",
     "doi": "10.1088/1674-1056/21/5/057106",
-    "count": 11
+    "count": 13
   },
   "liu2015identification": {
     "title": "Identification of topological surface state in PdTe2 superconductor by angle-resolved photoemission spectroscopy",
     "norm": "identificationoftopologicalsurfacestateinpdte2superconductorbyangleresolvedphotoemissionspectroscopy",
     "doi": "10.1088/0256-307x/32/6/067303",
-    "count": 71
+    "count": 73
   },
   "liu2015electronic": {
     "title": "Electronic structure of transition metal dichalcogenides PdTe2 and Cu0.05PdTe2 superconductors obtained by angle-resolved photoemission spectroscopy",
     "norm": "electronicstructureoftransitionmetaldichalcogenidespdte2andcu005pdte2superconductorsobtainedbyangleresolvedphotoemissionspectroscopy",
     "doi": "10.1088/1674-1056/24/6/067401",
-    "count": 22
+    "count": 23
   },
   "liu2015anomalous": {
     "title": "Anomalous high-energy waterfall-like electronic structure in 5 d transition metal oxide Sr2IrO4 with a strong spin-orbit coupling",
@@ -141,7 +141,7 @@
     "title": "Thermoelectric generation of orbital magnetization in metals",
     "norm": "thermoelectricgenerationoforbitalmagnetizationinmetals",
     "doi": "10.1103/physrevb.103.045401",
-    "count": 42
+    "count": 43
   },
   "tai2020two": {
     "title": "Two-dimensional CoSe structures: Intrinsic magnetism, strain-tunable anisotropic valleys, magnetic Weyl point, and antiferromagnetic metal state",
@@ -165,19 +165,19 @@
     "title": "Berry connection polarizability tensor and third-order Hall effect",
     "norm": "berryconnectionpolarizabilitytensorandthirdorderhalleffect",
     "doi": "10.1103/physrevb.105.045118",
-    "count": 70
+    "count": 72
   },
   "chen2020universal": {
     "title": "Universal approach to magnetic second-order topological insulator",
     "norm": "universalapproachtomagneticsecondordertopologicalinsulator",
     "doi": "10.1103/physrevlett.125.056402",
-    "count": 158
+    "count": 161
   },
   "lai2021third": {
     "title": "Third-order nonlinear Hall effect induced by the Berry-connection polarizability tensor",
     "norm": "thirdordernonlinearhalleffectinducedbytheberryconnectionpolarizabilitytensor",
     "doi": "10.1038/s41565-021-00917-0",
-    "count": 127
+    "count": 129
   },
   "liang2020isosymmetric": {
     "title": "Isosymmetric phase transitions, ultrahigh ductility, and topological nodal lines in $\\alpha$- A g 2 S",
@@ -195,7 +195,7 @@
     "title": "Intrinsic Second-Order Anomalous Hall Effect and Its Application in Compensated Antiferromagnets",
     "norm": "intrinsicsecondorderanomaloushalleffectanditsapplicationincompensatedantiferromagnets",
     "doi": "10.1103/physrevlett.127.277202",
-    "count": 177
+    "count": 180
   },
   "biswas2021chiral": {
     "title": "Chiral singlet superconductivity in the weakly correlated metal LaPt3P",
@@ -273,7 +273,7 @@
     "title": "Spin space groups: full classification and applications",
     "norm": "spinspacegroupsfullclassificationandapplications",
     "doi": "10.1103/physrevx.14.031037",
-    "count": 99
+    "count": 102
   },
   "su2024highly": {
     "title": "Highly Anisotropic Drude-Weight-Reduction and Enhanced Linear-Dichroism in van der Waals Weyl Semimetal Td-MoTe2 with Coherent Interlayer Electronic Transport",
@@ -327,7 +327,7 @@
     "title": "Coexistence of Topological Surface States and Superconductivity in Dirac Semimetal NiTe 2",
     "norm": "coexistenceoftopologicalsurfacestatesandsuperconductivityindiracsemimetalnite2",
     "doi": "10.1103/vpl7-n6bp",
-    "count": 1
+    "count": 2
   },
   "wang2026orbital": {
     "title": "Orbital-Selective Spin-Orbit Mott Insulator in Fractional Valence Iridate La 3 Ir 3 O 11",
