@@ -18,7 +18,7 @@ try:
 except ImportError:
     raise SystemExit("pip install requests")
 
-BIB_FILE    = Path(__file__).parent.parent / "my_publication.bib"
+BIB_FILE    = Path(__file__).parent / "my_publication.bib"
 OUTPUT_FILE = Path(__file__).parent / "citations.json"
 API         = "https://api.crossref.org/works"
 EMAIL       = "jzzhao@tju.edu.cn"          # Crossref polite-pool
