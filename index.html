@@ -561,7 +561,7 @@
   }
 
   // ── Main: fetch → render ──────────────────────────────────────────────────
-  fetch("citations.json")
+  fetch("citations.json?v=" + Date.now())
     .then(r => r.json())
     .then(data => {
       const papers = Object.values(data);
