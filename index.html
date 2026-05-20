@@ -300,7 +300,25 @@
       .profile-photo { width: 140px; height: 140px; }
       .research-grid { grid-template-columns: 1fr; }
     }
+
+    /* keep MathJax inline math at the same size/weight as surrounding text */
+    mjx-container[jax="CHTML"][display="false"] { font-size: 100% !important; }
   </style>
+
+  <!-- MathJax: enables LaTeX math (e.g. $_3$, $\alpha$) inside publication titles -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$']],
+        processEscapes: true,
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+      },
+      startup: { typeset: false },
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
 
@@ -468,355 +486,9 @@
 <section id="publications">
   <div class="page">
     <h2 class="section-title">Publications</h2>
-
-    <!-- ── TOPIC 1: TOPOLOGICAL QUANTUM MATERIALS ── -->
-    <div class="year-group">
-      <div class="year-label">Topological Quantum Materials</div>
-      <ul class="pub-list">
-        <li>
-          <div class="pub-title">Enhanced Phonon–Phonon Interactions and Weakened Electron–Phonon Coupling in Charge Density Wave Topological Semimetal EuAl₄ with a Possible Intermediate Electronic State</div>
-          <div class="pub-authors">S. Cao, F. Jin, <span class="me">J. Zhao</span>, Y.-Z. Long, J. Luo, Q. Zhang, Z.-G. Chen</div>
-          <div class="pub-venue"><span class="journal">Journal of Physical Chemistry Letters</span> 16, 1909–1915 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">5d orbital induced room temperature quantum anomalous Hall effect in TbCl</div>
-          <div class="pub-authors">J. Zhong, <span class="me">J. Zhao</span>, J. Zou, G. Xu</div>
-          <div class="pub-venue"><span class="journal">npj Computational Materials</span> 11, 236 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Optical signature of flat bands in topological hourglass semimetal Nb₃SiTe₆</div>
-          <div class="pub-authors">S. Cao, C. Zhang, Y. Xu, <span class="me">J. Zhao</span>, Y. Shi, Y.-Z. Long, J. Luo, Z.-G. Chen</div>
-          <div class="pub-venue"><span class="journal">Chinese Physics B</span> 34, 027101 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Highly Anisotropic Drude-Weight-Reduction and Enhanced Linear-Dichroism in van der Waals Weyl Semimetal Td-MoTe₂ with Coherent Interlayer Electronic Transport</div>
-          <div class="pub-authors">B. Su, W. Wu, <span class="me">J. Zhao</span>, X. Deng, W. Li, S. A. Yang, Y. Shi, Q. Li, J. Luo, G. Gu, et al.</div>
-          <div class="pub-venue"><span class="journal">Laser &amp; Photonics Reviews</span> 2400599 (2024)</div>
-        </li>
-        <li>
-          <div class="pub-title">Anomalous nonequilibrium phonon scattering in the Weyl semimetal WP₂</div>
-          <div class="pub-authors">J. Yu, <span class="me">J. Zhao</span>, Y. Lv, Y. Han, Z. Hang, J. Xu, J. Hu</div>
-          <div class="pub-venue"><span class="journal">Physical Review Research</span> 5, 023137 (2023)</div>
-        </li>
-        <li>
-          <div class="pub-title">Symmetry-enforced nodal chain phonons</div>
-          <div class="pub-authors">J. Zhu, W. Wu, <span class="me">J. Zhao</span>, H. Chen, L. Zhang, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">npj Quantum Materials</span> 7, 52 (2022)</div>
-        </li>
-        <li>
-          <div class="pub-title">Phononic real Chern insulator with protected corner modes in graphynes</div>
-          <div class="pub-authors">J. Zhu, W. Wu, <span class="me">J. Zhao</span>, C. Chen, Q. Wang, X.-L. Sheng, L. Zhang, Y. X. Zhao, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 105, 085123 (2022)</div>
-        </li>
-        <li>
-          <div class="pub-title">Universal approach to magnetic second-order topological insulator
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">C. Chen, Z. Song, <span class="me">J.-Z. Zhao</span>, Z. Chen, Z.-M. Yu, X.-L. Sheng, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 125, 056402 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Nonsymmorphic nodal-line metals in the two-dimensional rare earth monochalcogenides MX (M = Sc, Y; X = S, Se, Te)</div>
-          <div class="pub-authors">H. Guo, <span class="me">J. Zhao</span>, C. Chen, S. Li, W. Jiang, H. Fan, X. Tian, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Journal of Materials Science</span> 55, 14883–14892 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Isosymmetric phase transitions, ultrahigh ductility, and topological nodal lines in α-Ag₂S</div>
-          <div class="pub-authors">Y. Liang, A. S. Ahmad, <span class="me">J. Zhao</span>, G. Song, X. Zhou, J. Ji, W. Zhang, Z. Han, J. Liu, K. Stahl, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 102, 140101(R) (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Photoexcited charge carrier dynamics in Sb₂Se₃(100)</div>
-          <div class="pub-authors">L. Grad, F. von Rohr, <span class="me">J. Zhao</span>, M. Hengsberger, J. Osterwalder</div>
-          <div class="pub-venue"><span class="journal">Physical Review Materials</span> 4, 105404 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Observation of multiple types of topological fermions in PdBiSe</div>
-          <div class="pub-authors">B. Q. Lv, Z.-L. Feng, <span class="me">J.-Z. Zhao</span>, N. F. Q. Yuan, A. Zong, K. F. Luo, R. Yu, Y.-B. Huang, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 99, 241104(R) (2019)</div>
-        </li>
-        <li>
-          <div class="pub-title">Large Fermi arc and robust Weyl semimetal phase in Ag₂S</div>
-          <div class="pub-authors">Z. Wang, K. Luo, <span class="me">J. Zhao</span>, R. Yu</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 100, 205117 (2019)</div>
-        </li>
-        <li>
-          <div class="pub-title">Strong and Tunable Electrical Anisotropy in Type-II Weyl Semimetal Candidate WP₂ with Broken Inversion Symmetry</div>
-          <div class="pub-authors">B. Su, Y. Song, Y. Hou, X. Chen, <span class="me">J. Zhao</span>, Y. Ma, Y. Yang, J. Guo, J. Luo, Z.-G. Chen</div>
-          <div class="pub-venue"><span class="journal">Advanced Materials</span> 31, 1903498 (2019)</div>
-        </li>
-        <li>
-          <div class="pub-title">Sb₂Se₃(100): A strongly anisotropic surface</div>
-          <div class="pub-authors">R. Totani, F. O. von Rohr, <span class="me">J. Zhao</span>, Z. Novotny, W.-D. Zabka, A. Soluyanov, J. Osterwalder</div>
-          <div class="pub-venue"><span class="journal">Physical Review Materials</span> 3, 125404 (2019)</div>
-        </li>
-        <li>
-          <div class="pub-title">Pressure-induced topological phase transitions and strongly anisotropic magnetoresistance in bulk black phosphorus</div>
-          <div class="pub-authors">C.-H. Li, Y.-J. Long, L.-X. Zhao, L. Shan, Z.-A. Ren, <span class="me">J.-Z. Zhao</span>, H.-M. Weng, X. Dai, Z. Fang, C. Ren, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 95, 125417 (2017)</div>
-        </li>
-        <li>
-          <div class="pub-title">Topological node-line semimetal in compressed black phosphorus</div>
-          <div class="pub-authors"><span class="me">J. Zhao</span>, R. Yu, H. Weng, Z. Fang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 94, 195104 (2016)</div>
-        </li>
-        <li>
-          <div class="pub-title">Identification of topological surface state in PdTe₂ superconductor by ARPES</div>
-          <div class="pub-authors">Y. Liu, <span class="me">J.-Z. Zhao</span>, L. Yu, C.-T. Lin, A.-J. Liang, C. Hu, Y. Ding, Y. Xu, S.-L. He, L. Zhao, et al.</div>
-          <div class="pub-venue"><span class="journal">Chinese Physics Letters</span> 32, 067303 (2015)</div>
-        </li>
-        <li>
-          <div class="pub-title">Electronic structure of transition metal dichalcogenides PdTe₂ and Cu₀.₀₅PdTe₂ superconductors by ARPES</div>
-          <div class="pub-authors">Y. Liu, <span class="me">J.-Z. Zhao</span>, L. Yu, C.-T. Lin, C. Hu, D.-F. Liu, Y.-Y. Peng, Z.-J. Xie, J.-F. He, C.-Y. Chen, et al.</div>
-          <div class="pub-venue"><span class="journal">Chinese Physics B</span> 24, 067401 (2015)</div>
-        </li>
-        <li>
-          <div class="pub-title">Topological crystalline Kondo insulator in mixed valence ytterbium borides
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">H. Weng, <span class="me">J. Zhao</span>, Z. Wang, Z. Fang, X. Dai</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 112, 016403 (2014)</div>
-        </li>
-        <li>
-          <div class="pub-title">Correlated topological insulators with mixed valence
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">F. Lu, <span class="me">J. Zhao</span>, H. Weng, Z. Fang, X. Dai</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 110, 096401 (2013)</div>
-        </li>
-      </ul>
+    <div id="pub-dynamic">
+      <p style="color:var(--muted);padding:2rem 0;">Loading publications…</p>
     </div>
-
-    <!-- ── TOPIC 2: STRONGLY CORRELATED SYSTEMS ── -->
-    <div class="year-group">
-      <div class="year-label">Strongly Correlated Electron Systems</div>
-      <ul class="pub-list">
-        <li>
-          <div class="pub-title">Giant anomalous Hall and Nernst effects in a heavy fermion ferromagnet</div>
-          <div class="pub-authors">L. Li, S. Guan, S. Chi, <span class="me">J. Zhao</span>, J. Li, X. Lin, G. Xu, S. Jia, et al.</div>
-          <div class="pub-venue"><span class="journal">Science Bulletin</span> (2026)</div>
-        </li>
-        <li>
-          <div class="pub-title">Flat topological nodal lines in heavy-fermion compound CeCoGe₃</div>
-          <div class="pub-authors">Y. Wang, W. Wu, <span class="me">J. Zhao</span></div>
-          <div class="pub-venue"><span class="journal">npj Computational Materials</span> (2026)</div>
-        </li>
-        <li>
-          <div class="pub-title">Orbital-Selective Spin-Orbit Mott Insulator in Fractional Valence Iridate La₃Ir₃O₁₁
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">K. Wang, J. Yang, C. Kang, W. Wu, W. Zhu, <span class="me">J. Zhao</span>, Y. Dai, B. Xu</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 136, 096501 (2026)</div>
-        </li>
-        <li>
-          <div class="pub-title">Effect of lattice distortion on the band structure and magnetism in the annealed kagome magnet FeGe</div>
-          <div class="pub-authors">A. Zhang, R. Yang, Y. Zhu, Z. Shi, X. Wu, A. Wang, B. Ji, Y. Dai, <span class="me">J. Zhao</span></div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 113, 085146 (2026)</div>
-        </li>
-        <li>
-          <div class="pub-title">Charge Dynamics of an Unconventional Three-Dimensional Charge Density Wave in Kagome FeGe
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">S. Yi, Z. Liao, Q. Wang, H. Ma, J. Liu, X. Teng, B. Gao, P. Dai, Y. Dai, <span class="me">J. Zhao</span>, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 134, 086902 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Grüneisen parameter, sound velocity, and shock-induced melting of a Ce-5 wt.% La alloy under dynamic compression</div>
-          <div class="pub-authors">Y.-J. Gu, <span class="me">J.-Z. Zhao</span>, K. Zhao, G.-J. Li, Z.-Q. Wang, J.-X. Gu, Q.-F. Chen</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 112, 064102 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Electronic correlations and absence of superconductivity in the collapsed phase of LaFe₂As₂</div>
-          <div class="pub-authors"><span class="me">J. Zhao</span>, Y. Wang, X. Feng, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 103, 125125 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Electronic correlations in the normal state of the kagome superconductor KV₃Sb₅</div>
-          <div class="pub-authors"><span class="me">J. Zhao</span>, W. Wu, Y. Wang, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 103, L241117 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Electronic correlations and flattened band in magnetic Weyl semimetal candidate Co₃Sn₂S₂
-            <span class="pub-badge badge-nc">Nat. Comm.</span></div>
-          <div class="pub-authors">Y. Xu, <span class="me">J. Zhao</span>, C. Yi, Q. Wang, Q. Yin, Y. Wang, X. Hu, L. Wang, E. Liu, G. Xu, et al.</div>
-          <div class="pub-venue"><span class="journal">Nature Communications</span> 11, 3985 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Mott phase in a van der Waals transition-metal halide at single-layer limit</div>
-          <div class="pub-authors">L. Peng, <span class="me">J. Zhao</span>, M. Cai, G.-Y. Hua, Z.-Y. Liu, H.-N. Xia, Y. Yuan, W.-H. Zhang, G. Xu, L.-X. Zhao, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review Research</span> 2, 023264 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Improved Hubbard-I approximation impurity solver for quantum impurity models</div>
-          <div class="pub-authors">H. Qiu, J. Zhuang, L. Huang, <span class="me">J. Zhao</span>, L. Du</div>
-          <div class="pub-venue"><span class="journal">Journal of Physics: Condensed Matter</span> 31, 025601 (2019)</div>
-        </li>
-        <li>
-          <div class="pub-title">Implementation of LDA+DMFT with the pseudo-potential-plane-wave method</div>
-          <div class="pub-authors"><span class="me">J.-Z. Zhao</span>, J.-N. Zhuang, X.-Y. Deng, Y. Bi, L.-C. Cai, Z. Fang, X. Dai</div>
-          <div class="pub-venue"><span class="journal">Chinese Physics B</span> 21, 057106 (2012)</div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- ── TOPIC 3: UNCONVENTIONAL SUPERCONDUCTIVITY ── -->
-    <div class="year-group">
-      <div class="year-label">Unconventional Superconductivity</div>
-      <ul class="pub-list">
-        <li>
-          <div class="pub-title">Discovery of Nodal-Line Superconductivity in Chiral Crystals
-            <span class="pub-badge badge-adv">Adv. Mater.</span></div>
-          <div class="pub-authors">T. Shang, <span class="me">J. Zhao</span>, L.-H. Hu, W. Wu, K. Xia, M. O. Ajeesh, M. Nicklas, et al.</div>
-          <div class="pub-venue"><span class="journal">Advanced Materials</span> 37, e11385 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Multiband superconductivity in the topological Kramers nodal-line semimetals</div>
-          <div class="pub-authors">T. Shang, <span class="me">J. Zhao</span>, K. Xia, L.-H. Hu, Y. Xu, Q. Zhan, D. J. Gawryluk, T. Shiroka</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 111, 214516 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Coexistence of Topological Surface States and Superconductivity in Dirac Semimetal NiTe₂
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">C. He, <span class="me">J.-Z. Zhao</span>, M. Du, L.-Z. Zhang, J.-Y. Zhang, K. Yang, N. F. Q. Yuan, A. Seliverstov, E. Janssens, J.-Y. Ge, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 135, 126607 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Linear scaling relation between 2D massless Dirac fermion Fermi velocity and Fe-As bond length in iron arsenide superconductors</div>
-          <div class="pub-authors">C. Lv, <span class="me">J. Zhao</span>, Y. Xu, Y. Song, C. Zhang, M. Ozerov, P. Dai, N.-L. Wang, Z.-G. Chen</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 111, L241110 (2025)</div>
-        </li>
-        <li>
-          <div class="pub-title">Nodeless superconductivity and topological nodal states in molybdenum carbide</div>
-          <div class="pub-authors">T. Shang, Y. Wang, B. Yu, K. Xia, D. J. Gawryluk, Y. Xu, Q. Zhan, <span class="me">J. Zhao</span>, T. Shiroka</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 110, 064510 (2024)</div>
-        </li>
-        <li>
-          <div class="pub-title">Fully gapped superconductivity and topological aspects of the noncentrosymmetric superconductor TaReSi</div>
-          <div class="pub-authors">T. Shang, <span class="me">J. Z. Zhao</span>, L.-H. Hu, D. J. Gawryluk, X. Y. Zhu, H. Zhang, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 107, 224504 (2023)</div>
-        </li>
-        <li>
-          <div class="pub-title">Time-reversal symmetry breaking superconductivity in three-dimensional Dirac semimetallic silicides</div>
-          <div class="pub-authors">S. K. Ghosh, P. K. Biswas, C. Xu, B. Li, <span class="me">J. Z. Zhao</span>, A. D. Hillier, X. Xu</div>
-          <div class="pub-venue"><span class="journal">Physical Review Research</span> 4, L012031 (2022)</div>
-        </li>
-        <li>
-          <div class="pub-title">Unconventional superconductivity in topological Kramers nodal-line semimetals
-            <span class="pub-badge badge-sa">Sci. Adv.</span></div>
-          <div class="pub-authors">T. Shang, <span class="me">J. Zhao</span>, L.-H. Hu, J. Ma, D. J. Gawryluk, X. Zhu, H. Zhang, et al.</div>
-          <div class="pub-venue"><span class="journal">Science Advances</span> 8, eabq6589 (2022)</div>
-        </li>
-        <li>
-          <div class="pub-title">Chiral singlet superconductivity in the weakly correlated metal LaPt₃P
-            <span class="pub-badge badge-nc">Nat. Comm.</span></div>
-          <div class="pub-authors">P. K. Biswas, S. K. Ghosh, <span class="me">J. Z. Zhao</span>, D. A. Mayoh, N. D. Zhigadlo, X. Xu, C. Baines, A. D. Hillier, G. Balakrishnan, M. R. Lees</div>
-          <div class="pub-venue"><span class="journal">Nature Communications</span> 12, 2504 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Multigap superconductivity in centrosymmetric and noncentrosymmetric rhenium-boron superconductors</div>
-          <div class="pub-authors">T. Shang, W. Xie, <span class="me">J. Z. Zhao</span>, Y. Chen, D. J. Gawryluk, M. Medarde, M. Shi, H. Q. Yuan, E. Pomjakushina, T. Shiroka</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 103, 184517 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Superconductivity and topological aspects of the rocksalt carbides NbC and TaC</div>
-          <div class="pub-authors">T. Shang, <span class="me">J. Z. Zhao</span>, D. J. Gawryluk, M. Shi, M. Medarde, E. Pomjakushina, T. Shiroka</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 101, 214518 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Time-reversal symmetry breaking in the noncentrosymmetric Zr₃Ir superconductor</div>
-          <div class="pub-authors">T. Shang, S. K. Ghosh, <span class="me">J. Z. Zhao</span>, L.-J. Chang, C. Baines, M. K. Lee, D. J. Gawryluk, M. Shi, M. Medarde, J. Quintanilla, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 102, 020503 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Multigap superconductivity in the Mo₅PB₂ boron-phosphorus compound</div>
-          <div class="pub-authors">T. Shang, W. Xie, D. J. Gawryluk, R. Khasanov, <span class="me">J. Z. Zhao</span>, M. Medarde, M. Shi, H. Q. Yuan, E. Pomjakushina, T. Shiroka</div>
-          <div class="pub-venue"><span class="journal">New Journal of Physics</span> 22, 093016 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Nodeless superconductivity and preserved time-reversal symmetry in the noncentrosymmetric Mo₃P superconductor</div>
-          <div class="pub-authors">T. Shang, J. Philippe, J. A. T. Verezhak, Z. Guguchia, <span class="me">J. Z. Zhao</span>, L.-J. Chang, M.-K. Lee, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 99, 184513 (2019)</div>
-        </li>
-        <li>
-          <div class="pub-title">Electronic structure of the new Ni-based superconductor KNi₂Se₂</div>
-          <div class="pub-authors">F. Lu, <span class="me">J. Z. Zhao</span>, W.-H. Wang</div>
-          <div class="pub-venue"><span class="journal">Journal of Physics: Condensed Matter</span> 24, 495501 (2012)</div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- ── TOPIC 3: SPIN SPACE GROUPS & MAGNETIC SYMMETRY ── -->
-    <div class="year-group">
-      <div class="year-label">Spin Space Groups &amp; Magnetic Symmetry</div>
-      <ul class="pub-list">
-        <li>
-          <div class="pub-title">Spin Space Groups: Full Classification and Applications
-            <span class="pub-badge badge-prx">PRX</span></div>
-          <div class="pub-authors">Z. Xiao, <span class="me">J. Zhao</span>, Y. Li, R. Shindou, Z.-D. Song</div>
-          <div class="pub-venue"><span class="journal">Physical Review X</span> 14, 031037 (2024)</div>
-        </li>
-        <li>
-          <div class="pub-title">Magnetic and electronic properties of bulk and two-dimensional FeBi₂Te₄: A first-principles study</div>
-          <div class="pub-authors">Q. Wang, <span class="me">J. Zhao</span>, W. Wu, Y. Zhou, Q. Li, M. T. Edmonds, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Chinese Physics B</span> 32, 087506 (2023)</div>
-        </li>
-        <li>
-          <div class="pub-title">Two-dimensional CoSe structures: intrinsic magnetism, strain-tunable anisotropic valleys, magnetic Weyl point, and antiferromagnetic metal state</div>
-          <div class="pub-authors">B. Tai, W. Wu, X. Feng, Y. Jiao, <span class="me">J. Zhao</span>, Y. Lu, X.-L. Sheng, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 102, 224422 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Anomalous high-energy waterfall-like electronic structure in 5d transition metal oxide Sr₂IrO₄ with strong spin-orbit coupling</div>
-          <div class="pub-authors">Y. Liu, L. Yu, X. Jia, <span class="me">J. Zhao</span>, H. Weng, Y. Peng, C. Chen, Z. Xie, D. Mou, J. He, et al.</div>
-          <div class="pub-venue"><span class="journal">Scientific Reports</span> 5, 13036 (2015)</div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- ── TOPIC 5: NONLINEAR TRANSPORT & OPTICAL PROPERTIES ── -->
-    <div class="year-group">
-      <div class="year-label">Nonlinear Transport &amp; Optical Properties</div>
-      <ul class="pub-list">
-        <li>
-          <div class="pub-title">Atom-scale understanding the adsorption mechanism of uranyl in the interlayer of montmorillonite</div>
-          <div class="pub-authors">N. Li, J. Wang, J. Wang, Y. Wang, Y. Fu, <span class="me">J. Zhao</span></div>
-          <div class="pub-venue"><span class="journal">Applied Surface Science</span> 612, 155910 (2023)</div>
-        </li>
-        <li>
-          <div class="pub-title">Berry connection polarizability tensor and third-order Hall effect</div>
-          <div class="pub-authors">H. Liu, <span class="me">J. Zhao</span>, Y.-X. Huang, X. Feng, C. Xiao, W. Wu, S. Lai, W.-b. Gao, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 105, 045118 (2022)</div>
-        </li>
-        <li>
-          <div class="pub-title">Intrinsic Second-Order Anomalous Hall Effect and Its Application in Compensated Antiferromagnets
-            <span class="pub-badge badge-prl">PRL</span></div>
-          <div class="pub-authors">H. Liu, <span class="me">J. Zhao</span>, Y.-X. Huang, W. Wu, X.-L. Sheng, C. Xiao, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review Letters</span> 127, 277202 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Third-order nonlinear Hall effect induced by the Berry-connection polarizability tensor
-            <span class="pub-badge badge-nn">Nat. Nano.</span></div>
-          <div class="pub-authors">S. Lai, H. Liu, Z. Zhang, <span class="me">J. Zhao</span>, X. Feng, N. Wang, C. Tang, Y. Liu, K. S. Novoselov, S. A. Yang, W. Chen</div>
-          <div class="pub-venue"><span class="journal">Nature Nanotechnology</span> 16, 869–873 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Thermoelectric generation of orbital magnetization in metals</div>
-          <div class="pub-authors">C. Xiao, H. Liu, <span class="me">J. Zhao</span>, S. A. Yang, Q. Niu</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 103, 045401 (2021)</div>
-        </li>
-        <li>
-          <div class="pub-title">Fermi liquid behavior and colossal magnetoresistance in layered MoOCl₂</div>
-          <div class="pub-authors">Z. Wang, M. Huang, <span class="me">J. Zhao</span>, C. Chen, H. Huang, X. Wang, P. Liu, J. Wang, J. Xiang, C. Feng, et al.</div>
-          <div class="pub-venue"><span class="journal">Physical Review Materials</span> 4, 041001 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Highly anisotropic two-dimensional metal in monolayer MoOCl₂</div>
-          <div class="pub-authors"><span class="me">J. Zhao</span>, W. Wu, J. Zhu, Y. Lu, B. Xiang, S. A. Yang</div>
-          <div class="pub-venue"><span class="journal">Physical Review B</span> 102, 245419 (2020)</div>
-        </li>
-        <li>
-          <div class="pub-title">Elucidating dz2 orbital selective catalytic activity in brownmillerite Ca₂Mn₂O₅</div>
-          <div class="pub-authors">Y. Lu, F. Lu, Z. Yang, J. Wu, H. Yu, X. Xie, J. Xu, F. Cheng, J. Chen, K. Xiong, et al.</div>
-          <div class="pub-venue"><span class="journal">AIP Advances</span> 6, 095019 (2016)</div>
-        </li>
-      </ul>
-    </div>
-
   </div>
 </section>
 
@@ -830,64 +502,110 @@
 </footer>
 
 <script>
-  // Auto-add PRB badges
-  document.querySelectorAll('.pub-venue .journal').forEach(el => {
-    if (el.textContent.trim() === 'Physical Review B') {
-      el.closest('li').querySelector('.pub-title')
-        .insertAdjacentHTML('beforeend', '<span class="pub-badge badge-prb">PRB</span>');
-    }
-  });
+  // ── Configuration ────────────────────────────────────────────────────────
+  const TOPICS = [
+    { id: "topology",   label: "Topological Quantum Materials" },
+    { id: "correlated", label: "Strongly Correlated Electron Systems" },
+    { id: "sc",         label: "Unconventional Superconductivity" },
+    { id: "spin",       label: "Spin Space Groups &amp; Magnetic Symmetry" },
+    { id: "transport",  label: "Nonlinear Transport &amp; Optical Properties" },
+    { id: "other",      label: "Other" },
+  ];
 
-  // Load pre-fetched citation counts from citations.json (run update_citations.py to refresh)
-  const subMap = {'₀':'0','₁':'1','₂':'2','₃':'3','₄':'4',
-                  '₅':'5','₆':'6','₇':'7','₈':'8','₉':'9'};
-  function normTitle(t) {
-    return t.replace(/[₀-₉]/g, c => subMap[c] ?? c)
-            .toLowerCase().replace(/[^a-z0-9]/g, '');
+  const BADGES = {
+    prl: { label: "PRL",         cls: "badge-prl" },
+    prx: { label: "PRX",         cls: "badge-prx" },
+    nc:  { label: "Nat. Comm.",  cls: "badge-nc"  },
+    nn:  { label: "Nat. Nano.",  cls: "badge-nn"  },
+    sa:  { label: "Sci. Adv.",   cls: "badge-sa"  },
+    adv: { label: "Adv. Mater.", cls: "badge-adv" },
+    prb: { label: "PRB",         cls: "badge-prb" },
+  };
+
+  // ── Helpers ───────────────────────────────────────────────────────────────
+  function esc(s) {
+    return String(s ?? "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
-  // Publication count (from HTML list)
-  const pubCount = document.querySelectorAll('.pub-list li').length;
+  function buildAuthors(authors, meIdx, etAl) {
+    if (!authors || !authors.length) return "";
+    const parts = authors.map((name, i) =>
+      i === meIdx ? `<span class="me">${esc(name)}</span>` : esc(name));
+    if (etAl) parts.push("et al.");
+    return parts.join(", ");
+  }
 
-  fetch('citations.json')
+  function buildVenue(p) {
+    let inner = `<span class="journal">${esc(p.journal)}</span>`;
+    if (p.volume && p.pages)  inner += ` ${esc(p.volume)}, ${esc(p.pages)}`;
+    else if (p.volume)        inner += ` ${esc(p.volume)}`;
+    else if (p.pages)         inner += ` ${esc(p.pages)}`;
+    if (p.year)               inner += ` (${esc(p.year)})`;
+    const content = p.doi
+      ? `<a href="https://doi.org/${esc(p.doi)}" target="_blank" rel="noopener">${inner}</a>`
+      : inner;
+    return `<div class="pub-venue">${content}</div>`;
+  }
+
+  function buildPaper(p) {
+    const badge = (p.badge && BADGES[p.badge])
+      ? `<span class="pub-badge ${BADGES[p.badge].cls}">${BADGES[p.badge].label}</span>` : "";
+    const count = (p.count > 0)
+      ? `<span class="${p.count > 100 ? "pub-cited high-cited" : p.count >= 50 ? "pub-cited mid-cited" : "pub-cited"}">${p.count}</span>` : "";
+    return `<li>
+        <div class="pub-title">${esc(p.title)}${badge}${count}</div>
+        <div class="pub-authors">${buildAuthors(p.authors, p.me, p.et_al)}</div>
+        ${buildVenue(p)}
+      </li>`;
+  }
+
+  // ── Main: fetch → render ──────────────────────────────────────────────────
+  fetch("citations.json")
     .then(r => r.json())
     .then(data => {
-      const lookup    = {};
-      const doiLookup = {};
-      let totalCitations = 0;
-      for (const info of Object.values(data)) {
-        if (info.norm) {
-          if (info.count != null) { lookup[info.norm] = info.count; totalCitations += info.count; }
-          if (info.doi)             doiLookup[info.norm] = info.doi;
-        }
-      }
-      document.querySelectorAll('.pub-list li').forEach(li => {
-        const titleEl = li.querySelector('.pub-title');
-        if (!titleEl) return;
-        const raw  = titleEl.childNodes[0]?.textContent?.trim() ?? '';
-        const key  = normTitle(raw);
-        const count = lookup[key];
-        if (count != null && count > 0) {
-          const cls = count > 100 ? 'pub-cited high-cited' : count >= 50 ? 'pub-cited mid-cited' : 'pub-cited';
-          titleEl.insertAdjacentHTML('beforeend',
-            `<span class="${cls}">${count}</span>`);
-        }
-        const doi = doiLookup[key];
-        if (doi) {
-          const venueEl = li.querySelector('.pub-venue');
-          if (venueEl) {
-            venueEl.innerHTML =
-              `<a href="https://doi.org/${doi}" target="_blank" rel="noopener">${venueEl.innerHTML}</a>`;
-          }
-        }
-      });
-      const statsEl = document.getElementById('pub-stats');
+      const papers = Object.values(data);
+      const totalCitations = papers.reduce((s, p) => s + (p.count || 0), 0);
+
+      // Stats line in About section
+      const statsEl = document.getElementById("pub-stats");
       if (statsEl) statsEl.textContent =
-        ` I have published ${pubCount} papers with a total of ${totalCitations} citations.`;
+        ` I have published ${papers.length} papers with a total of ${totalCitations} citations.`;
+
+      // Group by topic
+      const grouped = new Map(TOPICS.map(t => [t.id, []]));
+      for (const p of papers) {
+        const tid = p.topic || "other";
+        (grouped.get(tid) ?? grouped.get("other")).push(p);
+      }
+
+      // Sort each group: year desc, then citation count desc
+      for (const arr of grouped.values()) {
+        arr.sort((a, b) => (b.year || 0) - (a.year || 0) || (b.count || 0) - (a.count || 0));
+      }
+
+      // Build HTML
+      const html = TOPICS
+        .filter(t => (grouped.get(t.id) || []).length > 0)
+        .map(t => `<div class="year-group">
+          <div class="year-label">${t.label}</div>
+          <ul class="pub-list">
+            ${(grouped.get(t.id) || []).map(buildPaper).join("\n            ")}
+          </ul>
+        </div>`)
+        .join("\n");
+
+      const root = document.getElementById("pub-dynamic");
+      root.innerHTML = html;
+      if (window.MathJax && MathJax.typesetPromise) {
+        MathJax.typesetPromise([root]).catch(() => {});
+      }
     })
     .catch(() => {
-      const statsEl = document.getElementById('pub-stats');
-      if (statsEl) statsEl.textContent = ` I have published ${pubCount} papers.`;
+      document.getElementById("pub-dynamic").innerHTML =
+        '<p style="color:var(--muted);padding:2rem 0;">Publications could not be loaded. Open this page via a local server or deploy to a host.</p>';
+      const statsEl = document.getElementById("pub-stats");
+      if (statsEl) statsEl.textContent = "";
     });
 </script>
 </body>
