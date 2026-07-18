@@ -78,7 +78,7 @@ TOPIC_MAP: dict[str, str] = {
     "yu2023anomalous":                          "topology",
     "shang2023fully":                           "sc",
     "wang2023magnetic":                         "spin",
-    "li2023atom":                               "transport",
+    "li2023atom":                               "other",
     "shang2024nodeless":                        "sc",
     "xiao2024spin":                             "spin",
     "su2024highly":                             "topology",
