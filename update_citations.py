@@ -96,6 +96,7 @@ TOPIC_MAP: dict[str, str] = {
     "wang2026flat":                             "correlated",
     "li2026giant":                              "correlated",
     "fanSwitchableAxionicMagnetoelectric2026":  "topology",
+    "guo2026high":                              "spin",
 }
 
 # ── helpers ───────────────────────────────────────────────────────────────────
@@ -300,6 +301,18 @@ def crossref_lookup(title: str, doi: str | None) -> tuple[str | None, int | None
             return items[0].get("DOI"), items[0].get("is-referenced-by-count")
     return None, None
 
+
+def openalex_count(doi: str) -> int | None:
+    """OpenAlex citation count; coverage is closer to Google Scholar than Crossref."""
+    try:
+        r = requests.get(f"https://api.openalex.org/works/doi:{doi}", timeout=15,
+                         params={"mailto": EMAIL, "select": "cited_by_count"})
+        if r.ok:
+            return r.json().get("cited_by_count")
+    except requests.RequestException:
+        pass
+    return None
+
 # ── main ──────────────────────────────────────────────────────────────────────
 
 def main():
@@ -335,16 +348,25 @@ def main():
 
         if not args.sync_only:
             print(f"[{i+1:2d}/{len(entries)}] {key} ...", end=" ", flush=True)
-            doi, count = crossref_lookup(title=e["title"], doi=entry["doi"])
-            entry["doi"]   = doi or entry["doi"]
-            entry["count"] = count
-            print(f"{'cited ' + str(count) if count is not None else 'not found'}")
+            doi, cr = crossref_lookup(title=e["title"], doi=entry["doi"])
+            entry["doi"] = doi or entry["doi"]
+            oa = openalex_count(entry["doi"]) if entry["doi"] else None
+            counts = [c for c in (cr, oa) if c is not None]
+            entry["count"] = max(counts) if counts else None
+            print(f"crossref {cr} / openalex {oa} -> {entry['count']}"
+                  if counts else "not found")
             time.sleep(0.5)
 
         results[key] = entry
 
+    # metadata for the page footer; keys starting with "_" are skipped by the JS
+    if args.sync_only:
+        results["_meta"] = existing.get("_meta", {})
+    else:
+        results["_meta"] = {"updated": time.strftime("%Y-%m-%d")}
+
     OUTPUT_FILE.write_text(json.dumps(results, indent=2, ensure_ascii=False))
-    n_new = sum(1 for k in results if k not in existing)
+    n_new = sum(1 for k in results if k not in existing and not k.startswith("_"))
     print(f"\n✓  {len(results)} entries saved ({n_new} new) → {OUTPUT_FILE}")
     if args.sync_only:
         print("   Tip: set \"topic\" for any new entries in citations.json, then open index.html.")

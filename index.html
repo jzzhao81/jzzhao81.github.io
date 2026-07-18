@@ -4,6 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jianzhou Zhao | Tianjin University</title>
+  <meta name="description" content="Jianzhou Zhao (赵建洲), Associate Professor at Tianjin University. Theoretical and computational condensed matter physics: topological quantum materials, strongly correlated electrons, unconventional superconductivity, and spin space groups." />
+  <meta property="og:title" content="Jianzhou Zhao | Tianjin University" />
+  <meta property="og:description" content="Theoretical and computational condensed matter physicist: topological quantum materials, strongly correlated electrons, unconventional superconductivity, spin space groups." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://jzzhao81.github.io/" />
+  <meta property="og:image" content="https://jzzhao81.github.io/2103_web.jpg" />
+  <link rel="canonical" href="https://jzzhao81.github.io/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='10'%20fill='%231a3a5c'/%3E%3Ctext%20x='32'%20y='43'%20font-family='Helvetica,Arial'%20font-size='28'%20font-weight='700'%20fill='white'%20text-anchor='middle'%3EJZ%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jianzhou Zhao",
+    "alternateName": "赵建洲",
+    "url": "https://jzzhao81.github.io/",
+    "jobTitle": "Associate Professor",
+    "affiliation": { "@type": "Organization", "name": "School of Science, Tianjin University" },
+    "email": "mailto:jzzhao@tju.edu.cn",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=jwm45RsAAAAJ",
+      "https://science.tju.edu.cn/info/1131/3588.htm",
+      "https://arxiv.org/a/zhao_j_1"
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -299,6 +324,42 @@
       .about-grid { grid-template-columns: 1fr; }
       .profile-photo { width: 140px; height: 140px; }
       .research-grid { grid-template-columns: 1fr; }
+      nav { padding: 0 0.5rem; }
+      nav ul { flex-wrap: wrap; justify-content: center; }
+      nav a { padding: 0.55rem 0.7rem; font-size: 0.85rem; }
+    }
+
+    /* ── DARK MODE ── */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --accent:  #6aa9e0;
+        --light-bg: #161b21;
+        --border:  #2c3743;
+        --text:    #d8dee6;
+        --muted:   #98a4b1;
+      }
+      body { background: #10151a; }
+      h2.section-title, .about-info h1, .member-card h4, .research-card h3 { color: #9cc4ea; }
+      .year-label { color: #9cc4ea; border-left-color: var(--accent); }
+      .member-card, .research-card, .profile-photo { background: #1a2129; }
+      .pub-venue .journal { color: #b9c3cd; }
+    }
+
+    /* ── PRINT (CV-like) ── */
+    @media print {
+      nav, footer { display: none; }
+      #experience, #group, #research { background: #fff; }
+      body { font-size: 11pt; }
+      .pub-list li, .member-card, .research-card { page-break-inside: avoid; }
+      .research-card, .member-card { border-color: #bbb; }
+      .contact-links a { border: none; padding: 0; }
+    }
+
+    .member-card h4 .zh {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--muted);
     }
 
     /* keep MathJax inline math at the same size/weight as surrounding text */
@@ -315,10 +376,20 @@
       options: {
         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
       },
-      startup: { typeset: false },
+      startup: {
+        typeset: false,
+        // If the publication list was rendered before MathJax finished loading,
+        // run the queued typeset now (see typesetPubs in the main script).
+        pageReady() {
+          return MathJax.startup.defaultPageReady().then(() => {
+            if (window.__typesetPending) window.__typesetPending();
+          });
+        },
+      },
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <!-- Self-hosted MathJax (v3.2.2): immune to CDN reachability issues in mainland China -->
+  <script async src="mathjax/tex-chtml.js"></script>
 </head>
 <body>
 
@@ -338,7 +409,7 @@
 <section id="about">
   <div class="page">
     <div class="about-grid">
-      <img class="profile-photo" src="2103.jpg" alt="Jianzhou Zhao" />
+      <img class="profile-photo" src="2103_web.jpg" width="200" height="200" alt="Portrait of Jianzhou Zhao" />
 
       <div class="about-info">
         <h1>Jianzhou Zhao <span class="zh">赵建洲</span></h1>
@@ -357,9 +428,9 @@
         </p>
         <div class="contact-links">
           <a href="mailto:jzzhao@tju.edu.cn">✉ jzzhao@tju.edu.cn</a>
-          <a href="https://science.tju.edu.cn/info/1131/3588.htm" target="_blank">TJU Profile</a>
-          <a href="https://scholar.google.com/citations?user=jwm45RsAAAAJ" target="_blank">Google Scholar</a>
-          <a href="https://arxiv.org/search/?searchtype=author&query=Jianzhou+Zhao" target="_blank">arXiv</a>
+          <a href="https://science.tju.edu.cn/info/1131/3588.htm" target="_blank" rel="noopener">TJU Profile</a>
+          <a href="https://scholar.google.com/citations?user=jwm45RsAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://arxiv.org/search/?searchtype=author&query=Jianzhou+Zhao" target="_blank" rel="noopener">arXiv</a>
           <!-- <a href="cv.pdf" target="_blank">CV</a> -->
         </div>
       </div>
@@ -472,10 +543,35 @@
     <div class="member-grid">
       <div class="member-card">
         <div class="member-avatar">GY</div>
-        <h4>Yufei Guo</h4>
+        <h4>Yufei Guo <span class="zh">郭宇飞</span></h4>
         <p class="role">Ph.D. Student</p>
         <p class="role">Joined Sep. 2025</p>
         <p class="topic">Topological circuits</p>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">JX</div>
+        <h4>Xintao Jin <span class="zh">金鑫涛</span></h4>
+        <p class="role">Ph.D. Student</p>
+        <p class="role">Joined Sep. 2026</p>
+        <p class="topic">DFT+DMFT calculations</p>
+      </div>
+    </div>
+
+    <p class="member-group-title">M.Sc. Students</p>
+    <div class="member-grid">
+      <div class="member-card">
+        <div class="member-avatar">TJ</div>
+        <h4>Jiale Tang <span class="zh">汤家乐</span></h4>
+        <p class="role">M.Sc. Student</p>
+        <p class="role">Joined Sep. 2026</p>
+        <p class="topic">Charge density waves (DFT)</p>
+      </div>
+      <div class="member-card">
+        <div class="member-avatar">YJ</div>
+        <h4>Jing Yang <span class="zh">杨璟</span></h4>
+        <p class="role">M.Sc. Student</p>
+        <p class="role">Joined May 2026</p>
+        <p class="topic">Anomalous &amp; orbital Hall effects (DFT)</p>
       </div>
     </div>
 
@@ -499,6 +595,7 @@
     School of Science, Tianjin University &nbsp;·&nbsp;
     <a href="mailto:jzzhao@tju.edu.cn">jzzhao@tju.edu.cn</a>
   </p>
+  <p style="margin-top:0.3rem;font-size:0.78rem;"><span id="data-updated"></span></p>
 </footer>
 
 <script>
@@ -564,13 +661,26 @@
   fetch("citations.json?v=" + Date.now())
     .then(r => r.json())
     .then(data => {
-      const papers = Object.values(data);
+      // Keys starting with "_" are metadata (e.g. _meta.updated), not papers.
+      const papers = Object.entries(data)
+        .filter(([k]) => !k.startsWith("_"))
+        .map(([, p]) => p);
       const totalCitations = papers.reduce((s, p) => s + (p.count || 0), 0);
+
+      // h-index: largest h with at least h papers cited >= h times
+      const counts = papers.map(p => p.count || 0).sort((a, b) => b - a);
+      let hIndex = 0;
+      while (hIndex < counts.length && counts[hIndex] >= hIndex + 1) hIndex++;
 
       // Stats line in About section
       const statsEl = document.getElementById("pub-stats");
       if (statsEl) statsEl.textContent =
-        ` I have published ${papers.length} papers with a total of ${totalCitations} citations.`;
+        ` I have published ${papers.length} papers with a total of ${totalCitations} citations (h-index: ${hIndex}).`;
+
+      // Footer: citation-data timestamp
+      const updEl = document.getElementById("data-updated");
+      if (updEl && data._meta && data._meta.updated)
+        updEl.textContent = `Citation data updated ${data._meta.updated} (Crossref / OpenAlex)`;
 
       // Group by topic
       const grouped = new Map(TOPICS.map(t => [t.id, []]));
@@ -597,9 +707,11 @@
 
       const root = document.getElementById("pub-dynamic");
       root.innerHTML = html;
-      if (window.MathJax && MathJax.typesetPromise) {
-        MathJax.typesetPromise([root]).catch(() => {});
-      }
+      // Typeset now if MathJax is ready; otherwise queue it for MathJax's
+      // pageReady hook (async CDN script may still be loading on first visit).
+      const typesetPubs = () => MathJax.typesetPromise([root]).catch(() => {});
+      if (window.MathJax && MathJax.typesetPromise) typesetPubs();
+      else window.__typesetPending = typesetPubs;
     })
     .catch(() => {
       document.getElementById("pub-dynamic").innerHTML =
