@@ -2,8 +2,8 @@
   "lu2013correlated": {
     "title": "Correlated topological insulators with mixed valence",
     "norm": "correlatedtopologicalinsulatorswithmixedvalence",
-    "doi": "10.1103/physrevlett.110.096401",
-    "count": 347,
+    "doi": "10.1103/PhysRevLett.110.096401",
+    "count": 348,
     "authors": [
       "F. Lu",
       "J. Zhao",
@@ -23,7 +23,7 @@
   "weng2014topological": {
     "title": "Topological crystalline Kondo insulator in mixed valence ytterbium borides",
     "norm": "topologicalcrystallinekondoinsulatorinmixedvalenceytterbiumborides",
-    "doi": "10.1103/physrevlett.112.016403",
+    "doi": "10.1103/PhysRevLett.112.016403",
     "count": 177,
     "authors": [
       "H. Weng",
@@ -45,7 +45,7 @@
     "title": "Implementation of LDA+DMFT with the pseudo-potential-plane-wave method",
     "norm": "implementationofldadmftwiththepseudopotentialplanewavemethod",
     "doi": "10.1088/1674-1056/21/5/057106",
-    "count": 13,
+    "count": 14,
     "authors": [
       "J. Zhao",
       "J. Zhuang",
@@ -67,7 +67,7 @@
   "liu2015identification": {
     "title": "Identification of topological surface state in PdTe$_2$ superconductor by angle-resolved photoemission spectroscopy",
     "norm": "identificationoftopologicalsurfacestateinpdte2superconductorbyangleresolvedphotoemissionspectroscopy",
-    "doi": "10.1088/0256-307x/32/6/067303",
+    "doi": "10.1088/0256-307X/32/6/067303",
     "count": 76,
     "authors": [
       "Y. Liu",
@@ -243,7 +243,7 @@
   "shang2019nodeless": {
     "title": "Nodeless superconductivity and preserved time-reversal symmetry in the noncentrosymmetric Mo$_3$P superconductor",
     "norm": "nodelesssuperconductivityandpreservedtimereversalsymmetryinthenoncentrosymmetricmo3psuperconductor",
-    "doi": "10.1103/physrevb.99.184513",
+    "doi": "10.1103/PhysRevB.99.184513",
     "count": 35,
     "authors": [
       "T. Shang",
@@ -364,7 +364,7 @@
   "wang2020fermi": {
     "title": "Fermi liquid behavior and colossal magnetoresistance in layered MoOCl$_2$",
     "norm": "fermiliquidbehaviorandcolossalmagnetoresistanceinlayeredmoocl2",
-    "doi": "10.1103/physrevmaterials.4.041001",
+    "doi": "10.1103/PhysRevMaterials.4.041001",
     "count": 23,
     "authors": [
       "Z. Wang",
@@ -466,7 +466,7 @@
   "grad2020photoexcited": {
     "title": "Photoexcited charge carrier dynamics in Sb$_2$Se$_3$ (100)",
     "norm": "photoexcitedchargecarrierdynamicsinsb2se3100",
-    "doi": "10.1103/physrevmaterials.4.105404",
+    "doi": "10.1103/PhysRevMaterials.4.105404",
     "count": 15,
     "authors": [
       "L. Grad",
@@ -646,7 +646,7 @@
     "title": "Berry connection polarizability tensor and third-order Hall effect",
     "norm": "berryconnectionpolarizabilitytensorandthirdorderhalleffect",
     "doi": "10.1103/physrevb.105.045118",
-    "count": 84,
+    "count": 86,
     "authors": [
       "H. Liu",
       "J. Zhao",
@@ -671,7 +671,7 @@
     "title": "Universal approach to magnetic second-order topological insulator",
     "norm": "universalapproachtomagneticsecondordertopologicalinsulator",
     "doi": "10.1103/physrevlett.125.056402",
-    "count": 173,
+    "count": 175,
     "authors": [
       "C. Chen",
       "Z. Song",
@@ -694,7 +694,7 @@
     "title": "Third-order nonlinear Hall effect induced by the Berry-connection polarizability tensor",
     "norm": "thirdordernonlinearhalleffectinducedbytheberryconnectionpolarizabilitytensor",
     "doi": "10.1038/s41565-021-00917-0",
-    "count": 143,
+    "count": 146,
     "authors": [
       "S. Lai",
       "H. Liu",
@@ -719,7 +719,7 @@
   "liang2020isosymmetric": {
     "title": "Isosymmetric phase transitions, ultrahigh ductility, and topological nodal lines in $\\alpha$-Ag$_2$S",
     "norm": "isosymmetricphasetransitionsultrahighductilityandtopologicalnodallinesinalphaag2s",
-    "doi": "10.1103/physrevb.102.140101",
+    "doi": "10.1103/PhysRevB.102.140101",
     "count": 8,
     "authors": [
       "Y. Liang",
@@ -765,7 +765,7 @@
     "title": "Intrinsic Second-Order Anomalous Hall Effect and Its Application in Compensated Antiferromagnets",
     "norm": "intrinsicsecondorderanomaloushalleffectanditsapplicationincompensatedantiferromagnets",
     "doi": "10.1103/physrevlett.127.277202",
-    "count": 200,
+    "count": 206,
     "authors": [
       "H. Liu",
       "J. Zhao",
@@ -903,7 +903,7 @@
     "title": "Electronic correlations and flattened band in magnetic Weyl semimetal candidate Co$_3$Sn$_2$S$_2$",
     "norm": "electroniccorrelationsandflattenedbandinmagneticweylsemimetalcandidateco3sn2s2",
     "doi": "10.1038/s41467-020-17234-0",
-    "count": 100,
+    "count": 101,
     "authors": [
       "Y. Xu",
       "J. Zhao",
@@ -1073,8 +1073,8 @@
   "xiao2024spin": {
     "title": "Spin space groups: full classification and applications",
     "norm": "spinspacegroupsfullclassificationandapplications",
-    "doi": "10.1103/physrevx.14.031037",
-    "count": 125,
+    "doi": "10.1103/PhysRevX.14.031037",
+    "count": 131,
     "authors": [
       "Z. Xiao",
       "J. Zhao",
@@ -1095,7 +1095,7 @@
     "title": "Highly Anisotropic Drude-Weight-Reduction and Enhanced Linear-Dichroism in van der Waals Weyl Semimetal T$_d$-MoTe$_2$ with Coherent Interlayer Electronic Transport",
     "norm": "highlyanisotropicdrudeweightreductionandenhancedlineardichroisminvanderwaalsweylsemimetaltdmote2withcoherentinterlayerelectronictransport",
     "doi": "10.1002/lpor.202400599",
-    "count": 3,
+    "count": 4,
     "authors": [
       "B. Su",
       "W. Wu",
@@ -1220,7 +1220,7 @@
     "title": "Enhanced Phonon--Phonon Interactions and Weakened Electron--Phonon Coupling in Charge Density Wave Topological Semimetal EuAl$_4$ with a Possible Intermediate Electronic State",
     "norm": "enhancedphononphononinteractionsandweakenedelectronphononcouplinginchargedensitywavetopologicalsemimetaleual4withapossibleintermediateelectronicstate",
     "doi": "10.1021/acs.jpclett.5c00007",
-    "count": 4,
+    "count": 5,
     "authors": [
       "S. Cao",
       "F. Jin",
@@ -1286,7 +1286,7 @@
     "title": "Discovery of Nodal-Line Superconductivity in Chiral Crystals",
     "norm": "discoveryofnodallinesuperconductivityinchiralcrystals",
     "doi": "10.1002/adma.202511385",
-    "count": 1,
+    "count": 2,
     "authors": [
       "T. Shang",
       "J. Zhao",
@@ -1312,7 +1312,7 @@
     "title": "Coexistence of Topological Surface States and Superconductivity in Dirac Semimetal NiTe$_2$",
     "norm": "coexistenceoftopologicalsurfacestatesandsuperconductivityindiracsemimetalnite2",
     "doi": "10.1103/vpl7-n6bp",
-    "count": 6,
+    "count": 7,
     "authors": [
       "C. He",
       "J. Zhao",
@@ -1406,7 +1406,7 @@
     "title": "Giant anomalous Hall and Nernst effects in a heavy fermion ferromagnet",
     "norm": "giantanomaloushallandnernsteffectsinaheavyfermionferromagnet",
     "doi": "10.1016/j.scib.2026.04.027",
-    "count": 4,
+    "count": 5,
     "authors": [
       "L. Li",
       "S. Guan",
@@ -1471,6 +1471,6 @@
     "topic": "spin"
   },
   "_meta": {
-    "updated": "2026-07-18"
+    "updated": "2026-08-10"
   }
 }
